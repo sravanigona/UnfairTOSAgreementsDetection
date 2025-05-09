@@ -22,28 +22,28 @@ def get_db_connection():
             host=DB_HOST,
             port=DB_PORT
         )
-        return conn 
+        return conn
     except Exception as e:
         print(f"Database connection error: {e}")
         return None
-    
+
 
 def setup_database():
     conn = get_db_connection()
     if not conn:
         return False
-    
+
     try:
         with conn.cursor() as cursor:
             # The tables are already created by the init script in Docker
             # This is just a verification step now
             cursor.execute("SELECT to_regclass('legal_documents');")
             has_tables = cursor.fetchone()[0] is not None
-            
+
             if has_tables:
                 print("Database tables already exist.")
                 return True
-                
+
             print("Tables don't exist. This shouldn't happen with the Docker setup.")
             return False
     except Exception as e:
@@ -80,6 +80,7 @@ def insert_document(title, document_type, content):
     finally:
         conn.close()
 
+
 def insert_clauses(clauses_data):
     """
     Insert multiple clauses into the database.
@@ -106,6 +107,7 @@ def insert_clauses(clauses_data):
     finally:
         conn.close()
 
+
 def insert_embeddings(embeddings_data):
     """
     Insert embeddings into the database.
@@ -114,7 +116,7 @@ def insert_embeddings(embeddings_data):
     conn = get_db_connection()
     if not conn:
         return False
-    
+
     try:
         with conn.cursor() as cursor:
             # Convert each embedding to a PostgreSQL vector
@@ -133,6 +135,8 @@ def insert_embeddings(embeddings_data):
         conn.close()
 
 # Add a function for similarity search
+
+
 def find_similar_clauses(embedding, limit=5):
     """
     Find similar clauses using cosine similarity.
@@ -140,7 +144,7 @@ def find_similar_clauses(embedding, limit=5):
     conn = get_db_connection()
     if not conn:
         return []
-    
+
     try:
         with conn.cursor() as cursor:
             cursor.execute("""
@@ -150,7 +154,7 @@ def find_similar_clauses(embedding, limit=5):
                 ORDER BY e.embedding_vector <=> %s
                 LIMIT %s;
             """, (embedding, embedding, limit))
-            
+
             results = cursor.fetchall()
             return [(id, text, similarity) for id, text, similarity in results]
     except Exception as e:
@@ -159,7 +163,7 @@ def find_similar_clauses(embedding, limit=5):
     finally:
         conn.close()
 
+
 # Initialize database if this script is run directly
 if __name__ == "__main__":
     setup_database()
-    

@@ -1,4 +1,4 @@
-import os 
+import os
 from dotenv import load_dotenv
 
 
@@ -14,8 +14,8 @@ else:
     openai.api_key = os.getenv("OPENAI_API_KEY", "dummy-api-key")
     client = openai
 
-def detect_anomalies_simple(contract_text):
 
+def detect_anomalies_simple(contract_text):
     """
     Simple benchmark using OpenAI API to detect legal anomalies in contract text.
     """
@@ -33,7 +33,7 @@ def detect_anomalies_simple(contract_text):
     specify their nature and potential implications.
     """
 
-    try: 
+    try:
         if USE_MOCK:
             response = client.chat_completion_create(
                 model="gpt-4",
@@ -55,7 +55,8 @@ def detect_anomalies_simple(contract_text):
         return response.choices[0].message.content
     except Exception as e:
         return f"Error: {str(e)}"
-    
+
+
 # Example usage with dummy data
 if __name__ == "__main__":
     sample_contract = """
@@ -76,6 +77,3 @@ if __name__ == "__main__":
 
     result = detect_anomalies_simple(sample_contract)
     print(result)
-
-
-

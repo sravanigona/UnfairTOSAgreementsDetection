@@ -1,0 +1,18 @@
+psql postgres
+
+CREATE DATABASE legal_anomaly_db;
+
+\c legal_anomaly_db
+
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE USER myuser WITH PASSWORD 'mypassword';
+
+GRANT ALL PRIVILEGES ON DATABASE legal_anomaly_db TO myuser;
+
+python main.py --test-db
+
+
+
+1. Problems with postgres on my current machine so I should instead undo what I did and create a docker container
+which will run postgres and connect to that docker container instead
