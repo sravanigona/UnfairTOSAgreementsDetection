@@ -1,0 +1,9 @@
+Running classification with TinyLlama...
+Running inference...
+Predictions saved to predicted_fairness.csv
+
+=== Classification Summary ===
+Total clauses analyzed: 937
+Fair: 909
+Unfair: 28
+Done with inference!
