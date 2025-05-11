@@ -1,0 +1,85 @@
+/var/spool/slurm/slurmd/job34024679/slurm_script: line 11: echo: write error: Disk quota exceeded
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [05:40<28:22, 340.40s/it]Fetching 6 files:  33%|███▎      | 2/6 [05:54<09:53, 148.39s/it]Fetching 6 files:  50%|█████     | 3/6 [06:08<04:20, 86.97s/it] Fetching 6 files: 100%|██████████| 6/6 [06:08<00:00, 61.38s/it]
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [02:41<13:29, 161.94s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [05:17<10:32, 158.25s/it]Loading checkpoint shards:  50%|█████     | 3/6 [08:00<08:00, 160.24s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [10:41<05:21, 160.61s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [13:14<02:37, 157.98s/it]Loading checkpoint shards: 100%|██████████| 6/6 [15:25<00:00, 148.81s/it]Loading checkpoint shards: 100%|██████████| 6/6 [15:25<00:00, 154.28s/it]
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.1` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
