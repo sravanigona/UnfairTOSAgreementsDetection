@@ -1,0 +1,101 @@
+=== Starting job on gypsum-gpu001 at Fri May  9 07:23:49 AM UTC 2025 ===
+Python version: Python 3.11.7
+Torch version: 2.7.0+cu126
+Transformers version: 4.51.3
+Running Evaluation:-
+Loaded validation dataset with 80 examples
+Loading adapter from: /home/njuttu_umass_edu/685/ZeroShotAnomolyDetection-1/SaulLM:7B/saul-7b-anomaly/final
+Evaluating examples...
+Example 0:
+  Text: if you believe that anything on the services infringes a copyright that you own or control , please ...
+  True label: 0 (Not Anomalous)
+  Prediction: 0 (Not Anomalous)
+  Full response: 'No, this clause is'
+
+Example 1:
+  Text: if oculus makes changes to these terms , we will provide notice of such changes as appropriate , suc...
+  True label: 1 (Anomalous)
+  Prediction: 0 (Not Anomalous)
+  Full response: 'No, this clause is'
+
+Example 2:
+  Text: `` user content '' means any communications , images , sounds , and all the material , data , and in...
+  True label: 0 (Not Anomalous)
+  Prediction: 0 (Not Anomalous)
+  Full response: 'No, this clause is'
+
+Example 3:
+  Text: these terms and any action related thereto will be governed by the laws of the state of california w...
+  True label: 1 (Anomalous)
+  Prediction: 1 (Anomalous)
+  Full response: 'Yes, this clause is'
+
+Example 4:
+  Text: you must not post any user content to the service if you are not the copyright owner of or are not f...
+  True label: 0 (Not Anomalous)
+  Prediction: 0 (Not Anomalous)
+  Full response: 'No, this clause is'
+
+Example 5:
+  Text: this license will end once you delete such content or your account unless users who have seen the co...
+  True label: 0 (Not Anomalous)
+  Prediction: 1 (Anomalous)
+  Full response: 'Yes, this clause is'
+
+Example 6:
+  Text: as under armour grows and improves , we might have to make changes to these terms or include additio...
+  True label: 1 (Anomalous)
+  Prediction: 1 (Anomalous)
+  Full response: 'Yes, this clause is'
+
+Example 7:
+  Text: 18.7 this paragraph 18 , along with paragraphs , 4.2 , 12 , 20.3 and any other provisions , which ar...
+  True label: 0 (Not Anomalous)
+  Prediction: 0 (Not Anomalous)
+  Full response: 'No, this clause is'
+
+Example 8:
+  Text: we assume no liability or responsibility for any errors or omissions in the content of the products ...
+  True label: 1 (Anomalous)
+  Prediction: 1 (Anomalous)
+  Full response: 'Yes, this clause is'
+
+Example 9:
+  Text: skyscanner facilitates your bookings with travel providers but is not responsible and has no liabili...
+  True label: 0 (Not Anomalous)
+  Prediction: 1 (Anomalous)
+  Full response: 'Yes, this clause is'
+
+Prediction distribution: 53 anomalous, 27 not anomalous
+True label distribution: 40 anomalous, 40 not anomalous
+
+=== EVALUATION RESULTS ===
+Accuracy: 0.8125
+Precision: 0.7358
+Recall: 0.9750
+F1 Score: 0.8387
+
+Confusion Matrix:
+[[26 14]
+ [ 1 39]]
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.96      0.65      0.78        40
+           1       0.74      0.97      0.84        40
+
+    accuracy                           0.81        80
+   macro avg       0.85      0.81      0.81        80
+weighted avg       0.85      0.81      0.81        80
+
+
+Prediction Analysis:
+True Positives: 39
+False Positives: 14
+True Negatives: 26
+False Negatives: 1
+
+Results saved to evaluation_results.csv
+Confusion matrix visualization saved to confusion_matrix.png
+=== Job finished at Fri May  9 07:47:43 AM UTC 2025 ===

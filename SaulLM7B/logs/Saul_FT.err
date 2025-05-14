@@ -1,0 +1,144 @@
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:16,  3.36s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:06<00:13,  3.40s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:10<00:10,  3.44s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:13<00:06,  3.47s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:17<00:03,  3.44s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.21s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.32s/it]
+/home/njuttu_umass_edu/685/ZeroShotAnomolyDetection-1/SaulLM:7B/run_finetune.py:198: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `CustomTrainer.__init__`. Use `processing_class` instead.
+  trainer = CustomTrainer(
+Warning: The following arguments do not match the ones in the `trainer_state.json` within the checkpoint directory: 
+	logging_steps: 50 (from args) != 5 (from trainer_state.json)
+	eval_steps: 50 (from args) != 20 (from trainer_state.json)
+	save_steps: 5000 (from args) != 20 (from trainer_state.json)
+	per_device_train_batch_size: 2 (from args) != 1 (from trainer_state.json)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:838: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/other.py:1110: UserWarning: Unable to fetch remote file due to the following error 429 Client Error: Too Many Requests for url: https://huggingface.co/Equall/Saul-7B-Base/resolve/main/config.json - silently ignoring the lookup for the file config.json in Equall/Saul-7B-Base.
+  warnings.warn(
+/home/njuttu_umass_edu/venvs/torch311_env/lib/python3.11/site-packages/peft/utils/save_and_load.py:236: UserWarning: Could not find a config file in Equall/Saul-7B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
