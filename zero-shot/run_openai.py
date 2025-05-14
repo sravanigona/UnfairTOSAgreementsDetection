@@ -12,6 +12,15 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 client = openai
 
 
+def collect_labels(all_predictions):
+    print(len(all_predictions))
+    output_labels = []
+    for i, message in enumerate(all_predictions):
+        # print(message)
+        output_labels.append(int(message.strip().split('Classification: ')[1]))
+    return output_labels
+
+
 def classify_clauses_batch(clauses, system_prompt, batch_size=10, model="gpt-4o-mini", mode="test"):
     all_predictions = []
     for i in range(0, len(clauses), batch_size):
@@ -50,7 +59,7 @@ def classify_clauses_batch(clauses, system_prompt, batch_size=10, model="gpt-4o-
             all_predictions.extend(batch_predictions)
             print(
                 f"Batch {i // batch_size + 1} processed successfully with {len(batch_predictions)} classifications.")
-
+            # return all_predictions
         except Exception as e:
             print(f"Error processing batch {i // batch_size + 1}: {e}")
     return all_predictions
@@ -120,18 +129,19 @@ def main():
     validation_clauses = final_splits['validation']['text']
     validation_labels = final_splits['validation']['label']
 
-    train_clauses = final_splits['train']['text']
-    train_labels = final_splits['validation']['label']
+    # train_clauses = final_splits['train']['text']
+    # train_labels = final_splits['validation']['label']
 
     test_clauses = final_splits['test']['text']
     test_labels = final_splits['validation']['label']
 
     validation_predictions = classify_clauses_batch(
         validation_clauses, system_prompt)
-
-    # evaluate_predictions(validation_labels, validation_predicted_labels)
+    validation_predictions_labels = collect_labels(validation_predictions)
+    # print(validation_predictions_labels)
+    evaluate_predictions(validation_labels, validation_predictions_labels)
 
 
 if __name__ == '__main__':
-    # main()
-    print()
+    main()
+    # print()
